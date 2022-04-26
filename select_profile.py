@@ -1,5 +1,6 @@
 from tkinter import *
 from tkinter import messagebox
+import webbrowser
 
 
 # ? Functions
@@ -55,6 +56,10 @@ def startApp():
     app.main_app(profileSelected, "black")
 
 
+def gitHubLink():
+    webbrowser.open_new_tab("https://github.com/TiagoRibeiro25/Anime-Manager")
+
+
 # ? Create start window
 window = Tk()
 window.geometry("250x350")
@@ -90,7 +95,7 @@ addUserBtn.place(relx=0.5, rely=0.82, anchor="center")
 
 # Git Hub Page link button
 gitHubBtn = Button(
-    window, text="GitHub Page", fg="#00F200", relief="flat", background="black", state=DISABLED)
+    window, text="GitHub Page", fg="#00F200", relief="flat", background="black", command=gitHubLink)
 gitHubBtn.place(relx=0.0, rely=1.0, anchor="sw")
 
 

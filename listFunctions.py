@@ -1,6 +1,3 @@
-from hashlib import new
-
-
 def getAnimeInfo(profile):
     totalNumberOfAnimes = 0
     totalNumberOfEp = 0
