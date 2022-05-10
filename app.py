@@ -55,6 +55,8 @@ def main_app(profile, color):
         if MsgBox != 'yes':
             return
         infoFunctions.deleteProfile(profile)
+        window.destroy()
+        import select_profile
 
     def deleteSelectedAnime():
         animeSelected = listClicked.get()
